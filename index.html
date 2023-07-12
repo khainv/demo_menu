@@ -1,0 +1,43 @@
+<html>
+    <head>
+        
+        <style>
+            .ul_lv1{
+                background: #eee;
+                .li_lv1:hover {
+                    background: #ccc;
+                }
+                .ul_lv2,.ul_lv3{
+                    display: none;
+                }
+                .ul_lv2.active,.ul_lv3.active{
+                    display: block;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <ul class="ul_lv1">
+            <li class="li_lv1">home</li>
+            <li class="li_lv1"><a href="">About</a><span data-id="about"> > </span>
+                <ul class="ul_lv2 ul_lv2_about">
+                    <li class="li_lv2">about lv2 <span data-id="aboutLv2"> > </span>
+                        <ul class="ul_lv3 ul_lv3_aboutLv2">
+                            <li><a href="">about lv3</a></li>
+                        </ul>
+                    </li>
+                    <li class="li_lv2">about lv2 2</li>
+                    <li class="li_lv2">about lv2 3</li>
+                </ul>
+            </li>
+            <li class="li_lv1"><a href="">news</a> <span data-id="news"> > </span>
+                <ul class="ul_lv2 ul_lv2_news">
+                    <li class="li_lv2">news lv2</li>
+                    <li class="li_lv2">news lv2 2</li>
+                    <li class="li_lv2">news lv2 3</li>
+                </ul>
+            </li>
+        </ul>
+    </body>
+    <script src="index.js"></script>
+</html>
